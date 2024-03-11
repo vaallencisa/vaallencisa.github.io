@@ -1,0 +1,951 @@
+<!-- Untuk menentukan versi html -->
+<!DOCTYPE html>
+
+<!-- tag pembuka html -->
+<html lang="en">
+  <!-- tag head berisi informasi dari web dan import keperluan eksternal -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- judul web -->
+    <title>BRI</title>
+
+    <!-- import styling css -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <!-- tag body untuk isi web -->
+  <body>
+    <!-- header memberikan navigasi web -->
+    <header>
+      <div style="height: 20px">
+        <h1><img src="BRI.webp" alt="Logo BRI" style="height: 20px" /></h1>
+        <!-- menampilkan menu pada header -->
+        <nav>
+          <ul>
+            <li><a href="#">Tentang BRI</a></li>
+            <li><a href="#">Produk & Layanan</a></li>
+            <li><a href="#">Promo</a></li>
+            <li><a href="#">Karir</a></li>
+            <li><a href="#">Hubungi Kami</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <!-- container berisi form -->
+      <div class="container">
+        <!-- heading berisi gambar dan judul -->
+        <div class="heading">
+          <img src="BRI2.svg" alt="" />
+          <div style="padding: 10px; margin-left: 40px">
+            <h4 style="font-size: 16px; font-weight: 800; margin-right: 30px">
+              FORMULIR PEMBUKAAN REKENING DAN PERUBAHAN DATA <br />
+              NASABAH PERORANGAN (AR-01)
+            </h4>
+          </div>
+          <img
+            src="BRI.webp"
+            alt=""
+            height="70px"
+            style="padding: 10px; margin-right: 50px"
+          />
+        </div>
+        <!-- tag form untuk membuka form yang akan diambil datanya -->
+        <form action="POST">
+          <div class="main-content">
+            <div
+              class="single-row flex"
+              style="
+                display: flex;
+                justify-content: space-between;
+                font-size: 14px;
+                font-weight: 800;">
+              <b
+                >DIISI DENGAN HURUF CETAK DAN BERI TANDA (V) PADA KOTAK PILIHAN
+                YANG SESUAI</b
+              >
+              <!-- input text untuk CIF -->
+              <div>
+                <label for="CIF">CIF</label
+                ><input type="text" id="CIF" style="width: 250px" />
+              </div>
+            </div>
+            <div
+              style="height: 2px; background-color: black; width: 100%"
+            ></div>
+            <div class="single-row flex flex">
+
+              <div class="long-span">
+                <!-- span untuk pertanyaan dengan banyak pilihan -->
+                <span>Apakah Anda memiliki rekening sebelumnya di BRI ?</span>
+              </div>
+              <!-- input checkbox untuk Ya -->
+              <div class="checkbox flex">
+                <input type="checkbox" id="rekya" /><label for="rekya">Ya</label>
+              </div>
+              <!-- input checkbox untuk Tidak -->
+              <div class="checkbox flex" style="margin-right: 110px">
+                <input type="checkbox" id="rektidak" /><label for="rektidak">Tidak</label>
+              </div>
+              <div class="medium-span">
+                <label for="norek">Nomor Rekening BRI</label>
+              </div>
+              <!-- input text untuk norek -->
+              <input type="text" name="norek" id="norek" style="width: 240px" />
+            </div>
+            <div class="single-row flex flex">
+              <div class="long-span">
+                <!-- span untuk pertanyaan dengan banyak pilihan -->
+                <span>Jenis Transaksi Nasabah</span>
+              </div>
+              <!-- input checkbox untuk Baru -->
+              <div class="checkbox flex">
+                <input type="checkbox" id="Nasabahbaru" /><label for="Nasabahbaru">Baru</label>
+              </div>
+              <!-- input checkbox untuk Perubahan -->
+              <div class="checkbox flex" style="margin-right: 110px">
+                <input type="checkbox" id="Perubahan" /><label for="Perubahan">Perubahan</label>
+              </div>
+              <div class="medium-span">
+                <label for="nobuka" class="short-span"
+                  >Nomor Rekening yang dibuka</label
+                >
+              </div>
+              <!-- input text untuk norek dibuka -->
+              <input type="text" name="nobuka" id="nobuka" style="width: 240px" />
+            </div>
+
+            <div class="flex">
+              <div class="segment left">
+                <div class="divider-orange">
+                  <div class="divider">
+                    <h5 class="divider-content">DATA DIRI</h5>
+                  </div>
+                </div>
+                <div class="single-row flex flex">
+                  <div class="short-span">
+                    <!-- span untuk pertanyaan dengan banyak pilihan -->
+                    <span>Kewarganegaraan</span>
+                  </div>
+                  <!-- input checkbox untuk WNI -->
+                  <div class="checkbox flex">
+                    <input type="checkbox" name="WNI" id="WNI" /><label for="WNI"
+                      >WNI</label
+                    >
+                  </div>
+                  <!-- input checkbox untuk WNA -->
+                  <div class="checkbox flex">
+                    <input type="checkbox" name="WNA" id="WNA" /><label for="WNA"
+                      >WNA
+                    </label>
+                  </div>
+                  <!-- input text untuk WNA -->
+                  <input type="text" name="WNA" id="WNA" style="width: 210px" />
+                </div>
+                <div class="single-row flex flex">
+                  <div class="short-span">
+                    <!-- span untuk pertanyaan dengan banyak pilihan -->
+                    <span>Jenis Identitas Utama</span>
+                  </div>
+                  <!-- input checkbox untuk KTP -->
+                  <div class="checkbox flex">
+                    <input type="checkbox" name="KTP" id="KTP" /><label for="KTP"
+                      >KTP</label
+                    >
+                  </div>
+                  <!-- input checkbox untuk Paspor -->
+                  <div class="checkbox flex">
+                    <input type="checkbox" name="Paspor" id="Paspor" /><label for="Paspor"
+                      >Paspor
+                    </label>
+                    <!-- input checkbox untuk Lainnya -->
+                  </div>
+                  <div class="checkbox flex mg5">
+                    <input type="checkbox" name="idenlain" id="idenlain" /><label for="idenlain"
+                      >Lainnya
+                    </label>
+                  </div>
+                  <!-- input text untuk lainnya -->
+                  <input type="text" name="idenlain" id="idenlain" class="medium-text" />
+                </div>
+                <div class="single-row flex flex">
+                  <div class="short-span">
+                    <span class="short-span">Jenis Identitas Perlengkap</span>
+                  </div>
+                  <!-- input checkbox untuk KITAS -->
+                  <div class="checkbox flex">
+                    <input type="checkbox" name="KITAS" id="KITAS" /><label for="KITAS"
+                      >KITAS</label
+                    >
+                  </div>
+                  <!-- input checkbox untuk KITAP -->
+                  <div class="checkbox flex">
+                    <input type="checkbox" name="KITAP" id="KITAP" /><label for="KITAP"
+                      >KITAP
+                    </label>
+                  </div>
+                  <!-- input checkbox untuk KIA -->
+                  <div class="checkbox flex">
+                    <input type="checkbox" name="KIA" id="KIA" /><label for="KIA"
+                      >KIA
+                    </label>
+                  </div>
+                  <!-- input checkbox untuk Lainnya -->
+                  <div class="checkbox flex mg5">
+                    <input type="checkbox" name="idenllain" id="idenllain" /><label for="idenllain"
+                      >Lainnya
+                    </label>
+                  </div>
+                  <!-- input text untuk lainnya -->
+                  <input type="text" name="idenllain" id="idenllain" style="width: 55px" />
+                </div>
+                <div class="multi-row">
+                  <table>
+                    <tr>
+                      <td class="short-span"><label for="idenlain">Nomor Identitas</label></td>
+                      <!-- input text untuk no identitas -->
+                      <td>
+                        <input
+                          type="text"
+                          name="noiden"
+                          id="noiden"
+                          class="long-text ml5"
+                        />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td>
+                        <label for="idenRT">RT</label>
+                        <!-- input text untuk RT -->
+                        <input
+                          type="text"
+                          name="idenRT"
+                          id="idenRT"
+                          class="small-text mg5"
+                        />
+                        <!-- input text untuk RW -->
+                        <label for="idenRW">RW</label
+                        ><input
+                          type="text"
+                          name="idenRW"
+                          id="idenRW"
+                          class="small-text mg5"
+                        />
+                        <!-- input text untuk Kode Pos -->
+                        <label for="idenPOS" style="margin-left: 17px">Kode Pos</label
+                        ><input
+                          type="text"
+                          name="idenPOS"
+                          id="idenPOS"
+                          style="width: 108px"
+                        />
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="single-row flex flex">
+                  <div class="short-span">
+                    <label for="TL">Tempat Lahir</label>
+                  </div>
+                  <!-- input text untuk TL -->
+                  <input type="text" name="TL" id="TL" style="width: 123px" />
+                  <div class="short-span">
+                    <label for="TgL" style="margin-left: 35px"
+                      >Tanggal Lahir</label
+                    >
+                  </div>
+                  <input type="date" name="TgL" id="TgL" />
+                </div>
+                <div class="single-row flex flex">
+                  <div class="short-span">
+                    <!-- span untuk pertanyaan dengan banyak pilihan -->
+                    <span>Jenis Kelamin</span>
+                  </div>
+                  <!-- input checkbox untuk Wanita -->
+                  <div class="checkbox flex">
+                    <input type="checkbox" name="Wanita" id="Wanita" /><label for="Wanita"
+                      >Wanita</label
+                    >
+                  </div>
+                  <!-- input checkbox untuk Pria -->
+                  <div class="checkbox flex">
+                    <input type="checkbox" name="Pria" id="Pria" /><label for="Pria"
+                      >Pria
+                    </label>
+                  </div>
+                </div>
+                <div class="single-row flex">
+                  <div class="short-span">
+                    <span class="short-span">Golongan Nasabah</span>
+                  </div>
+                  <!-- input checkbox untuk Penduduk -->
+                  <div class="checkbox flex">
+                    <input type="checkbox" name="Penduduk" id="Penduduk" /><label for="Penduduk"
+                      >Penduduk</label
+                    >
+                  </div>
+                  <div class="flex" style="width: 160px">
+                    <!-- input checkbox untuk Non Penduduk -->
+                    <input type="checkbox" name="nonPenduduk" id="nonPenduduk" /><label for="nonPenduduk"
+                      >Non Penduduk</label
+                    >
+                  </div>
+                </div>
+                <div class="multi-row">
+                  <table>
+                    <tr>
+                      <td>
+                        <div class="short-span">
+                            <!-- span untuk pertanyaan dengan banyak pilihan -->
+                          <span>Pendidikan Terakhir</span>
+                        </div>
+                      </td>
+                      <td class="flex">
+                        <!-- input checkbox untuk SD -->
+                        <div class="checkbox flex">
+                          <input type="checkbox" name="SD" id="SD" /><label for="SD"
+                            >SD</label
+                          >
+                        </div>
+                        <!-- input checkbox untuk Diploma -->
+                        <div class="checkbox flex">
+                          <input type="checkbox" name="Diploma" id="Diploma" /><label for="Diploma"
+                            >Diploma</label
+                          >
+                        </div>
+                        <div class="checkbox flex">
+                            <!-- input checkbox untuk S3 -->
+                          <input type="checkbox" name="S3" id="s3" /><label for="s3"
+                            >S3</label
+                          >
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td class="flex">
+                        <!-- input checkbox untuk SMP -->
+                        <div class="checkbox flex">
+                          <input type="checkbox" name="SMP" id="SMP" /><label for="SMP"
+                            >SMP</label
+                          >
+                        </div>
+                        <!-- input checkbox untuk S1 -->
+                        <div class="checkbox flex">
+                          <input type="checkbox" name="S1" id="S1" /><label for="S1"
+                            >S1</label
+                          >
+                        </div>
+                        <div class="flex">
+                            <!-- input checkbox untuk Tidak Sekolah -->
+                          <input type="checkbox" name="tidaksekolah" id="tidaksekolah" /><label for="tidaksekolah"
+                            >Tidak Sekolah</label
+                          >
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td class="flex">
+                        <div class="checkbox flex">
+                            <!-- input checkbox untuk Ya -->
+                          <input type="checkbox" name="SMA" id="SMA" /><label for="SMA"
+                            >SMA</label
+                          >
+                        </div>
+                        <div class="checkbox flex">
+                            <!-- input checkbox untuk S2 -->
+                          <input type="checkbox" name="S2" id="S2" /><label for="S2"
+                            >S2</label
+                          >
+                        </div>
+                        <div class="checkbox flex">
+                            <!-- input checkbox untuk Lainnya -->
+                          <input type="checkbox" name="Sekolahlain" id="Sekolahlain" /><label for="Sekolahlain"
+                            >Lainnya</label
+                          >
+                        </div>
+                        <!-- input text untuk lainnya -->
+                        <input type="text" name="Sekolahlain" id="Sekolahlain" class="medium-text" />
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="single-row flex">
+                  <div class="short-span">
+                    <label for="Agama" class="short-span">Agama</label>
+                  </div>
+                  <!-- input text untuk Agama -->
+                  <input type="text" name="Agama" id="Agama" class="long-text" />
+                </div>
+
+                <div class="single-row flex">
+                  <div class="short-span">
+                    <label for="Gadis" class="short-span"
+                      >Nama Gadis Ibu Kandung</label
+                    >
+                  </div>
+                  <!-- input text untuk nama ibu -->
+                  <input type="text" name="Gadis" id="Gadis" class="long-text" />
+                </div>
+                <div class="multi-row flex">
+                  <table>
+                    <tr>
+                      <td>
+                        <div class="short-span ml5">
+                          <label for="NPWP2" class="short-span">Nomor NPWP</label>
+                        </div>
+                      </td>
+                      <td>
+                        <!-- input text untuk NPWP -->
+                        <input type="text" name="NPWP2" id="NPWP2" class="long-text" />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td>
+                        <div class="flex">
+                            <!-- input checkbox untuk Punya -->
+                          <input type="checkbox" name="BelumNPWP" id="BelumNPWP" /><label for="BelumNPWP"
+                            >Belum Memiliki NPWP</label
+                          >
+                          <!-- input checkbox untuk Tidak Punya -->
+                          <input type="checkbox" name="BukanPajak" id="BukanPajak" /><label for="BukanPajak"
+                            >Bukan Subjek Pajak</label
+                          >
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="multi-row">
+                  <table>
+                    <tr>
+                      <td>
+                        <div class="short-span">
+                          <span for="" class="short-span"
+                            >Informasi Kontak</span
+                          >
+                        </div>
+                      </td>
+                      <td class="flex">
+                        <!-- input text untuk Telepon -->
+                        <label for="infoTelepon" class="checkbox">Telepon</label
+                        ><input type="text" name="infoTelepon" id="infoTelepon" class="large-text" />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td class="flex">
+                        <!-- input text untuk Handphone -->
+                        <label for="infoHandphone" class="checkbox"><i>Handphone</i></label
+                        ><input type="text" name="infoHandphone" id="infoHandphone" class="large-text" />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td class="flex">
+                        <!-- input email untuk email -->
+                        <label for="infoEmail" class="checkbox"><i>Email</i></label
+                        ><input type="email" name="infoEmail" id="infoEmail" class="large-text" />
+                      </td>
+                    </tr>
+                  </table>
+                  <div class="short-span"></div>
+                </div>
+
+                <div class="multi-row">
+                  <table>
+                    <tr>
+                      <td>
+                        <div class="short-span">
+                          <label for="medsos1">Jenis Media Sosial</label>
+                        </div>
+                      </td>
+                      <td>
+                        <!-- input text untuk medsos -->
+                        <input
+                          type="text"
+                          name="medsos1"
+                          id="medsos1"
+                          class="long-text ml5"
+                        />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td>
+                        <!-- input email untuk email -->
+                        <label for="medsos1email" class="input:text"
+                          >Nama Akun/<i>Email</i></label
+                        ><input
+                          type="email"
+                          name="medsos1email"
+                          id="medsos1email"
+                          style="width: 265px"
+                        />
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="multi-row">
+                  <table>
+                    <tr>
+                      <td>
+                        <div class="short-span">
+                          <label for="medsos2">Jenis Media Sosial</label>
+                        </div>
+                      </td>
+                      <td>
+                        <!-- input text untuk medsos -->
+                        <input
+                          type="text"
+                          name="medsos2"
+                          id="medsos2"
+                          class="long-text ml5"
+                        />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td>
+                        <!-- input email untuk email -->
+                        <label for="" class="input:text"
+                          >Nama Akun/<i>Email</i></label
+                        ><input
+                          type="email"
+                          name="medsos2email"
+                          id="medsos2email"
+                          style="width: 265px"
+                        />
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="multi-row">
+                  <table>
+                    <tr>
+                      <td>
+                        <div class="short-span">
+                          <label for="Domisili" class="short-span"
+                            >Alamat Domisili</label
+                          >
+                        </div>
+                      </td>
+                      <td>
+                        <!-- input text untuk domisili -->
+                        <input
+                          type="text"
+                          name="Domisili"
+                          id="Domisili"
+                          class="long-text ml5"
+                        />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td>
+                        <!-- input text untuk RT -->
+                        <label for="">RT</label
+                        ><input
+                          type="text"
+                          name="DomisiliRT"
+                          id="DomisiliRT"
+                          class="small-text mg5"
+                        />
+                        <!-- input text untuk RW -->
+                        <label for="DomisiliRW">RW</label
+                        ><input
+                          type="text"
+                          name="DomisiliRW"
+                          id="DomisiliRW"
+                          class="small-text mg5"
+                        />
+                        <!-- input text untuk Kode POS -->
+                        <label for="DomisiliPOS" style="margin-left: 17px">Kode Pos</label
+                        ><input
+                          type="text"
+                          name="DomisiliPOS"
+                          id="DomisiliPOS"
+                          style="width: 108px"
+                        />
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="single-row flex">
+                  <div class="short-span">
+                    <label for="Hobi" class="short-span">Hobi</label>
+                  </div>
+                  <!-- input text untuk Hobi -->
+                  <input type="text" name="" id="Hobi" class="long-text" />
+                </div>
+              </div>
+
+              <div
+                style="
+                  width: 2px;
+                  height: auto;
+                  background-color: blue;
+                  margin-left: -5px;
+                  margin-right: 5px;
+                  margin-top: 35px;
+                "
+              ></div>
+
+              <div class="segment right">
+                <div class="divider-orange2">
+                  <div class="divider2">
+                    <h5 class="divider-content">DATA DIRI</h5>
+                  </div>
+                </div>
+                <div class="multi-row flex">
+                  <table>
+                    <tr>
+                      <td>
+                        <div class="large-span">
+                            <!-- span untuk pertanyaan dengan banyak pilihan -->
+                          <span>Tujuan Pembuatan Rekening</span>
+                        </div>
+                      </td>
+                      <td class="flex">
+                        <div class="short-text flex">
+                          <input type="checkbox" name="Menabung" id="Menabung" /><label for="Menabung"
+                            >Menabung</label
+                          >
+                        </div>
+                        <div class="short-text flex">
+                          <input type="checkbox" name="Investasi" id="Investasi" /><label for="Investasi"
+                            >Investasi</label
+                          >
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td class="flex">
+                        <!-- input checkbox untuk Transaksi -->
+                        <div class="short-text flex">
+                          <input type="checkbox" name="Transaksi" id="Transaksi" /><label for="Transaksi"
+                            >Transaksi</label
+                          >
+                        </div>
+                        <!-- input checkbox untuk Lainnya -->
+                        <div class="flex">
+                          <input type="checkbox" name="buatLain" id="buatLain" /><label for="buatLain"
+                            >Lainnya</label
+                          >
+                          <!-- input text untuk Lainnya -->
+                          <input
+                            type="text"
+                            name="buatLain"
+                            id="buatLain"
+                            style="width: 130px"
+                          />
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="multi-row flex">
+                  <table>
+                    <tr>
+                      <td>
+                        <div class="large-span">
+                            <!-- span untuk pertanyaan dengan banyak pilihan -->
+                          <span>Sumber Dana</span>
+                        </div>
+                      </td>
+                      <td class="flex">
+                        <div class="short-text flex">
+                            <!-- input checkbox untuk Gaji -->
+                          <input type="checkbox" name="Gaji" id="Gaji" /><label for="Gaji"
+                            >Gaji</label
+                          >
+                        </div>
+                        <div class="short-text flex">
+                            <!-- input checkbox untuk Usaha -->
+                          <input type="checkbox" name="Usaha" id="Usaha" /><label for="Usaha"
+                            >Usaha</label
+                          >
+                        </div>
+                        <div class="flex">
+                            <!-- input checkbox untuk Dana Bantuan -->
+                          <input type="checkbox" name="Bantuan" id="Bantuan" /><label for="Bantuan"
+                            >Dana Bantuan</label
+                          >
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td class="flex">
+                        <div class="short-text flex">
+                            <!-- input checkbox untuk Orang Tua -->
+                          <input type="checkbox" name="Ortu" id="Ortu" /><label for="Ortu"
+                            >Orang Tua</label
+                          >
+                        </div>
+                        <div class="flex">
+                            <!-- input checkbox untuk Lainnya -->
+                          <input type="checkbox" name="OrtuLain" id="OrtuLain" /><label for="OrtuLain"
+                            >Lainnya</label
+                          >
+                        </div>
+                        <!-- input text untuk Lainnya -->
+                        <input type="text" name="OrtuLain" id="OrtuLain" style="width: 130px" />
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+
+                <div class="single-row flex">
+                  <div class="large-span">
+                    <label for="PekerjaanLain">Pekerjaan Lainnya</label>
+                  </div>
+                  <!-- input text untuk Lainnya -->
+                  <input type="text" name="PekerjaanLain" id="PekerjaanLain" class="llg-text" />
+                </div>
+
+                <div class="single-row flex">
+                  <label for="PenghasilanBulan" class="large-span"
+                    >Penghasilan Nasabah per Bulan</label
+                  >
+                  <!-- input text untuk Penghasilan -->
+                  <input type="text" name="PenghasilanBulan" id="PenghasilanBulan" class="llg-text" />
+                </div>
+                <div class="multi-row">
+                  <table>
+                    <tr>
+                      <td>
+                        <div class="large-span">
+                            <!-- span untuk pertanyaan dengan banyak pilihan -->
+                          <span>Transaksi Normal Harian</span>
+                        </div>
+                      </td>
+                      <td>
+                        <!-- input checkbox untuk 10 Juta> -->
+                        <input type="checkbox" name="trk10" id="trk10" /><label for="trk10"
+                          >s/d Rp 10 Juta</label
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td>
+                        <!-- input checkbox untuk <50Juta -->
+                        <input type="checkbox" name="trk50" id="trk50" /><label for="trk50">
+                          > Rp 10 Juta <= Rp 50 Juta</label
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td>
+                        <!-- input checkbox untuk <100Juta -->
+                        <input type="checkbox" name="trk100" id="trk100" /><label for="trk100">
+                          > Rp 50 Juta <= Rp 100 Juta</label
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td>
+                        <!-- input checkbox untuk <1M -->
+                        <input type="checkbox" name="trk1M" id="trk1M" /><label for="trk1M">
+                          > Rp 100 Juta <= Rp 1 Milyar</label
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td>
+                        <!-- input checkbox untuk >1M -->
+                        <input type="checkbox" name="trk1M+" id="trk1M+" /><label for="trk1M+">
+                          > 1 Milyar</label
+                        >
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+
+                <div class="divider-orange2">
+                  <div class="divider2">
+                    <h5 class="divider-content">PRODUK YANG DIPILIH</h5>
+                  </div>
+                </div>
+                <div class="single-row flex">
+                  <div class="large-span">
+                    <label for="">Produk yang dipilih</label>
+                  </div>
+                  <!-- input text untuk Produk -->
+                  <input type="text" name="Produk" id="Produk" class="llg-text" />
+                </div>
+                <div class="single-row flex">
+                  <div class="large-span">
+                    <span>Mata Uang</span>
+                  </div>
+                  <!-- input checkbox untuk Rupiah -->
+                  <div class="checkbox flex">
+                    <input type="checkbox" name="Rupiah" id="Rupiah" /><label for="Rupiah"
+                      >Rupiah</label
+                    >
+                  </div>
+                  <!-- input checkbox untuk Valas -->
+                  <div class="checkbox flex">
+                    <input type="Valas" name="Valas" id="Valas" /><label for="Valas"
+                      >Valas</label
+                    >
+                  </div>
+                  <!-- input text untuk Valas -->
+                  <label for="MUValas">Mata Uang Valas</label
+                  ><input type="text" name="MUValas" id="MUValas" style="width: 55px" />
+                </div>
+                <div class="multi-row flex">
+                  <table>
+                    <tr>
+                      <td>
+                        <div class="large-span ml5">
+                          <span
+                            >Penerbitan Bukti <br />Kepemilikan Rekening</span
+                          >
+                        </div>
+                      </td>
+                      <td class="flex">
+                        <!-- input checkbox untuk Ya -->
+                        <div class="checkbox flex">
+                          <input type="checkbox" name="pemilikYa" id="pemilikYa" /><label for="pemilikYa"
+                            >Ya</label
+                          >
+                        </div>
+                        <!-- input checkbox untuk Tidak -->
+                        <div class="checkbox flex">
+                          <input type="checkbox" name="pemilikTidak" id="pemilikTidak" /><label for="pemilikTidak"
+                            >Tidak</label
+                          >
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td class="flex">
+                        <div class="flex">
+                            <!-- input text untuk Kepemilikan -->
+                          <label for="buktiMilik">No. Bukti Kepemilikan</label>
+                          <input
+                            type="text"
+                            name="buktiMilik"
+                            id="buktiMilik"
+                            style="width: 170px"
+                          />
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="multi-row flex">
+                  <table>
+                    <tr>
+                      <td>
+                        <div class="large-span ml5">
+                            <!-- span untuk pertanyaan dengan banyak pilihan -->
+                          <span>Alamat Surat Menyurat</span>
+                        </div>
+                      </td>
+                      <td class="flex">
+                        <div class="short-span flex">
+                            <!-- input checkbox untuk Alamat Identitas -->
+                          <input type="checkbox" name="alamatIden" id="alamatIden" /><label for="alamatIden"
+                            >Alamat Identitas</label
+                          >
+                        </div>
+                        <div class="short-span flex">
+                            <!-- input checkbox untuk Alamat Kantor -->
+                          <input type="checkbox" name="alamatKantor" id="alamatKantor" /><label for="alamatKantor"
+                            >Alamat Kantor/ Tempat Usaha</label
+                          >
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td>
+                        <div class="short-span flex">
+                            <!-- input checkbox untuk Alamat Domisili -->
+                          <input type="checkbox" name="alamatDomi" id="alamatDomi" /><label for="alamatDomi"
+                            >Alamat Domisili</label
+                          >
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="single-row flex">
+                  <div class="large-span">
+                    <label for="alamatKet">Keterangan</label>
+                  </div>
+                  <!-- input text untuk Keterangan -->
+                  <input type="text" name="alamatKet" id="alamatKet" class="llg-text" />
+                </div>
+
+                <div class="divider-orange2">
+                  <div class="divider2">
+                    <h5 class="divider-content">REKENING GIRO</h5>
+                  </div>
+                </div>
+                <div class="multi-row flex">
+                  <table>
+                    <tr>
+                      <td>
+                        <div class="large-span ml5">
+                            <!-- span untuk pertanyaan dengan banyak pilihan -->
+                          <span>Penyampaian Rekening <br />Koran Giro</span>
+                        </div>
+                      </td>
+                      <td class="flex">
+                        <div class="short-span flex">
+                            <!-- input checkbox untuk Diambil Sendiri -->
+                          <input type="checkbox" name="Sendiri" id="Sendiri" /><label for="Sendiri"
+                            >Diambil Sendiri</label
+                          >
+                        </div>
+                        <div class="short-span flex">
+                            <!-- input checkbox untuk Dikirim email -->
+                          <input type="checkbox" name="kirimEmail" id="kirimEmail" /><label for="kirimEmail"
+                            >Dikirim Ke <i>Email</i></label
+                          >
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td class="flex">
+                        <div class="flex">
+                            <!-- input email untuk email -->
+                          <label for="kirimEmail">Alamat <i>Email</i></label>
+                          <input
+                            type="email"
+                            name="kirimEmail"
+                            id="kirimEmail"
+                            style="width: 170px"
+                          />
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </main>
+    <footer>
+        <div style="height: 20px;">
+            Made By Cisa Valentino
+        </div>
+    </footer>
+  </body>
+</html>
