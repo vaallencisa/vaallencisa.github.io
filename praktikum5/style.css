@@ -1,0 +1,249 @@
+:root {
+  --main-color: #0a0a0a;
+  --main-color-hover: rgb(202, 202, 202);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+}
+
+/* START NAV */
+.nav-container {
+  position: sticky;
+  top: 0px;
+  z-index: 100;
+  background-color: white;
+}
+
+.nav-container header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-container .logonav {
+  align-items: center;
+  padding-left: 120px;
+  display: flex;
+}
+
+.nav-container .logo img {
+  height: 60px;
+  margin-right: 80px;
+}
+
+.nav-container li {
+  padding: 50px 30px;
+  font-size: 15px;
+  list-style: none;
+  color: var(--main-color);
+}
+
+.nav-container li:hover {
+  color: lightgray;
+  border-bottom: 3px solid lightgray;
+  margin-bottom: -3px;
+}
+
+.nav-container ul {
+  display: flex;
+}
+
+.nav-container ul a {
+  font-size: 15px; 
+  color: var(--main-color);
+}
+
+
+.btn-admission a {
+  padding: 12px 20px;
+  margin-right: 120px;
+  background-color: lightgray;
+  border-radius: 25px;
+
+  color: white;
+}
+
+/* END OF NAV */
+/* START OF HERO */
+
+.hero-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.hero-container img {
+  height: 90vh;
+  margin: 30px;
+}
+
+.hero-text {
+  margin-top: 300px;
+}
+
+.hero-text h2 {
+  font-size: 64px;
+  font-weight: 800;
+}
+
+.hero-text p {
+  margin-right: 90px;
+  margin-bottom: 30px;
+
+  letter-spacing: 0.8px;
+  line-height: 24px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.hero-text .btn-kenali p {
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.hero-text .btn-kenali {
+  width: 250px;
+  padding: 15px 20px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+
+  color: red;
+}
+/* END OF HERO */
+/* START OFcard */
+
+.card-index {
+  margin: 0px 100px 30px 100px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding: 0 2%;
+}
+
+.card-index .snippet {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 370px;
+  margin-top: 1rem;
+
+  border: 0.5px solid rgba(202, 202, 202, 0.2);
+  border-radius: 20px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 0.25rem;
+}
+
+.card-index .snippet-img {
+  width: 70%;
+
+  margin: 20px 0;
+}
+
+.card-index .snippet-txt {
+  padding: 0 1em;
+  text-align: center;
+}
+
+.card-index .snippet-txt h2 {
+  margin-bottom: 20px;
+}
+
+.card-index .snippet-txt p {
+  padding: 20px;
+  margin-bottom: 20px;
+  line-height: 25px;
+}
+/* END card */
+
+/* Start Welcome */
+.welcome {
+  display: flex;
+}
+
+.welcome-img img {
+  height: 530px;
+  margin: 80px;
+}
+
+.welcome-text {
+  margin-top: 170px;
+}
+
+.welcome-text h3 {
+  font-size: 50px;
+  font-weight: 800;
+
+  text-shadow: 6px 6px 4px rgba(0, 0, 0, 0.2);
+}
+
+.welcome-text p {
+  line-height: 25px;
+
+  padding-right: 35px;
+  margin-bottom: 30px;
+}
+
+.welcome-text .lebihlanjut {
+  padding: 12px 24px;
+  width: 150px;
+  text-align: center;
+  border-radius: 0px 20px;
+  box-shadow: 6px 6px 5px rgba(0, 0, 0, 0.2);
+
+  background-color: red;
+  color: white;
+}
+
+.lebihlanjut:hover {
+  border-radius: 20px 0;
+  transition: 0.3s;
+}
+/* End of Welcome */
+
+.about-us {
+  position: relative;
+  display: inline-block;
+}
+
+.about-us:hover .dropdown {
+  display: block;
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: gray;
+  padding: 10px;
+
+  display: none;
+}
+
+.dropdown ul {
+  display: flex;
+  flex-direction: column;
+  
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown ul li {
+  padding: 5px;
+  border-bottom: 1px solid #ccc;
+}
+
+.dropdown ul li a {
+    color: white;
+
+}
+
